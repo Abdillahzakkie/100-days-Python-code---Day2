@@ -10,8 +10,6 @@ total_number_of_people = float(input("How many people to split the bill? "))
 
 percent_tip_amount = total_bill * (percent_tip / 100)
 
-amount = total_bill / total_number_of_people
-my_share = amount + percent_tip_amount
+amount = (total_bill + percent_tip_amount) / total_number_of_people
 
 print(f"Each person should play: {round(amount, 2)}")
-print(f"You should pay: {round(my_share, 2)}")
